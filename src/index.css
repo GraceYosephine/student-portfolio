@@ -1,0 +1,98 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { 
+  color-scheme: light;
+  --scroll-behavior: smooth;
+}
+
+html { 
+  scroll-behavior: smooth;
+}
+
+body { 
+  margin: 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+@layer base {
+  body { 
+    @apply text-slate-700 bg-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight;
+  }
+  
+  a {
+    @apply transition-colors;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-brand-500 to-brand-600 px-5 py-3 text-sm font-extrabold text-white hover:from-brand-600 hover:to-brand-700 transition-all shadow-lg hover:shadow-glow disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border-2 border-brand-200 bg-white/80 px-5 py-3 text-sm font-extrabold text-slate-800 hover:border-brand-300 hover:bg-white transition-all;
+  }
+  
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-white/10 px-4 py-2 text-sm font-extrabold text-white hover:bg-white/20 transition-all border border-white/20;
+  }
+  
+  .glass-card {
+    @apply rounded-2xl border border-white/40 bg-white/70 shadow-card backdrop-blur-md;
+  }
+  
+  .glass-dark {
+    @apply rounded-2xl border border-white/10 bg-slate-950/70 text-white shadow-card backdrop-blur-md;
+  }
+}
+
+@layer utilities {
+  .bg-dots {
+    background-image: 
+      radial-gradient(circle, rgba(14, 165, 233, 0.08) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .shadow-soft { 
+    @apply shadow-card;
+  }
+
+  /* Hero split gradient vibe */
+  .hero-glow {
+    background: 
+      linear-gradient(135deg, #ffffff 0%, #f0f9ff 50%, #f8fafc 100%);
+  }
+  
+  .dark-glow {
+    background: 
+      radial-gradient(circle at 15% 20%, rgba(14,165,233,.15), transparent 50%),
+      radial-gradient(circle at 85% 80%, rgba(6,182,212,.1), transparent 60%), 
+      linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-brand-500 to-brand-700 bg-clip-text text-transparent;
+  }
+  
+  .section-divider {
+    @apply relative py-20 md:py-28;
+  }
+  
+  .section-container {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  
+  .smooth-transition {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  
+  .hover-lift {
+    @apply hover:shadow-lg hover:-translate-y-1 smooth-transition;
+  }
+}
