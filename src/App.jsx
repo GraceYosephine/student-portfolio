@@ -206,7 +206,7 @@ const DATA = {
         "Communicated complex data insights in compelling and accessible manner.",
         "Strengthened data analysis skills and stakeholder communication abilities."
       ],
-      pdfs: ["Kimia Farma_Big Data Analytics Project Based Internship.pdf", "Kimia Farma - Final Task.pdf"]
+      pdfs: ["Final Task_Kimia Farma_Big Data Analytics__Grace Yosephine_.pdf", "pbi-certificate-246721IAPGGIK3062025.pdf"]
     },
     {
       icon: "🔍",
@@ -221,7 +221,7 @@ const DATA = {
         "Played key role in enhancing user satisfaction and engagement.",
         "Applied user-centric design principles and data-informed decision making."
       ],
-      pdfs: ["Project-Based-Internship>UX Researcher-Telkom Digital Amoeba<pdf", "FinalTask_TDA_UX Researcher_Grace Yosephine.pdf"]
+      pdfs: ["pbi-certificate-246721IAPGGIT3052025.pdf", "FinalTask_TDA_UX Researcher_Grace Yosephine.pdf"]
     },
     {
       icon: "🧪",
