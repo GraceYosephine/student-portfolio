@@ -234,8 +234,7 @@ const DATA = {
         "Performed functional and regression testing to ensure software quality and stability.",
         "Logged bugs with detailed steps and coordinated verification with development teams.",
         "Improved test case documentation and testing procedures."
-      ],
-      pdfs: ["pbi-certificate-246721IAPGGIJ29102023.pdf"]
+      ]
     },
     {
       icon: "🎤",
